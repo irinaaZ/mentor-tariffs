@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariffs</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page__body">
+<include src="assets/templates/header.html"></include>
+<main>
+    <section class="tariffs">
+        <div class="wrapper">
+            <div class="tabs">
+                <button class="tabs-btn">Mentees</button>
+                <button class="tabs-btn tabs-btn--active">Tariffs</button>
+                <button class="tabs-btn">Profile</button>
+            </div>
+            <div class="tariffs-container">
+                <div class="tariffs-container__header">
+                    <h2 class="section-header section-header--tariffs">All Tariffs</h2>
+                    <div class="tariffs-button-container">
+                        <button class="create-tariff">Create new tariff</button>
+                        <img class="plus-icon" src="img/icons/plus-icon.svg" alt="plus icon">
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="card-header">
+                                <h3 class="page__heading page__heading--price">Light</h3>
+                                <img src="img/icons/pencil-button.svg" alt="pencil icon">
+                            </div>
+                            <ul class="price-card__desc">
+                                <li>Personalized goals</li>
+                                <li>Study recommendations</li>
+                            </ul>
+                            <div class="page__heading page__heading--amount">
+                                <span class="currency">$</span>
+                                <span class="amount">50</span>
+                                <span class="month">/month</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-header">
+                                <h3 class="page__heading page__heading--price">Dedicated</h3>
+                                <img src="img/icons/pencil-button.svg" alt="pencil icon">
+                            </div>
+                            <ul class="price-card__desc">
+                                <li>Dedicated</li>
+                                <li>Personalized goals</li>
+                                <li>Study recommendations</li>
+                                <li>Code reviews</li>
+                                <li>Individual chat support</li>
+                                <li>Individual sync-up calls</li>
+                                <li>Interview preparation</li>
+                                <li>Daily education sessions</li>
+                            </ul>
+                            <div class="page__heading page__heading--amount">
+                                <span class="currency">$</span>
+                                <span class="amount">Contact us</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-header">
+                                <h3 class="page__heading page__heading--price">Individual</h3>
+                                <img src="img/icons/pencil-button.svg" alt="pencil icon">
+                            </div>
+                            <ul class="price-card__desc">
+                                <li>Personalized goals</li>
+                                <li>Study recommendations</li>
+                                <li>Code reviews</li>
+                                <li>Individual chat support</li>
+                                <li>Individual sync-up calls</li>
+                                <li>Interview preparation</li>
+                            </ul>
+                            <div class="page__heading page__heading--amount">
+                                <span class="currency">$</span>
+                                <span class="amount">300</span>
+                                <span class="month">/month</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-header">
+                                <h3 class="page__heading page__heading--price">Group</h3>
+                                <img src="img/icons/pencil-button.svg" alt="pencil icon">
+                            </div>
+                            <ul class="price-card__desc">
+                                <li>Personalized goals</li>
+                                <li>Study recommendations</li>
+                                <li>Code reviews</li>
+                                <li>Group chat support</li>
+                                <li>Group sync-up calls</li>
+                            </ul>
+                            <div class="page__heading page__heading--amount">
+                                <span class="currency">$</span>
+                                <span class="amount">150</span>
+                                <span class="month">/month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="editing-tariff">
+                    <div class="container">
+                        <h4 class="editing-tariff__header">Editing the tariff</h4>
+                        <form class="editing-tariff__form" action="" autocomplete="off">
+                            <div class="inputs">
+                                <div class="input-wrapper input-wrapper--w-200">
+                                    <label for="name">Tariff Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Individual">
+                                </div>
+                                <div class="input-wrapper input-wrapper--w-70">
+                                    <label for="price">Price (month)</label>
+                                    <div class="custom-input">
+                                        <input class="part left" type="text" placeholder="$">
+                                        <input class="part" type="number" name="price" id="price" placeholder="300">
+                                    </div>
+                                </div>
+                                <div class="input-wrapper input-wrapper--w-100">
+                                    <label for="description">Tariff Description</label>
+                                    <textarea id="description" name="description" rows="15" cols="100" placeholder="">
+    &#9679 Personalized goals
+    &#9679 Study recommendations
+    &#9679 Code reviews
+    &#9679 Individual chat support
+    &#9679 Individual sync-up calls
+    &#9679 Interview preparation
+                            </textarea>
+                                </div>
+                            </div>
+                            <div class="button-container button-container--form">
+                                <button class="remove">Remove this tariff</button>
+                                <div class="inner">
+                                    <button class="cancel">Cancel</button>
+                                    <button class="save">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<include src="assets/templates/footer.html"></include>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</body>
+</html>
